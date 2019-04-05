@@ -1,0 +1,20 @@
+title:             Stacy Montemayor
+email:             stacy.montemayor@gmail.com
+description:       Data Wrangling + Visualizations for Storytelling
+author:            Stacy Montemayor
+baseurl:           ""
+url:               "https://teacupwoozy.github.io"
+
+# Social Profiles
+twitter_username:  teacupwoozy
+github_username:   teacupwoozy
+linkedin_username: stacymontemayor
+# facebook_username: 
+
+# Build settings
+markdown:          kramdown
+paginate:          5
+paginate_path:     "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
