@@ -24,7 +24,7 @@ a {
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
   a:focus, a:hover {
-    color: #0085A1; }
+    color: #ffbf00; }
 
 blockquote {
   font-style: italic;
@@ -47,12 +47,12 @@ blockquote {
 
 ::-moz-selection {
   color: #fff;
-  background: #0085A1;
+  background: #ffbf00;
   text-shadow: none; }
 
 ::selection {
   color: #fff;
-  background: #0085A1;
+  background: #ffbf00;
   text-shadow: none; }
 
 img::selection {
@@ -120,11 +120,11 @@ img::-moz-selection {
         #mainNav.is-fixed .navbar-brand {
           color: #212529; }
           #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
-            color: #0085A1; }
+            color: #ffbf00; }
         #mainNav.is-fixed .navbar-nav > li.nav-item > a {
           color: #212529; }
           #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-            color: #0085A1; }
+            color: #ffbf00; }
       #mainNav.is-visible {
         /* if the user changes the scrolling direction, we show the header */
         -webkit-transform: translate3d(0, 100%, 0);
@@ -208,7 +208,7 @@ header.masthead {
   color: #212529; }
   .post-preview > a:focus, .post-preview > a:hover {
     text-decoration: none;
-    color: #0085A1; }
+    color: #00ffbf; }
   .post-preview > a > .post-title {
     font-size: 30px;
     margin-top: 30px;
@@ -226,7 +226,7 @@ header.masthead {
     color: #212529; }
     .post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
       text-decoration: underline;
-      color: #0085A1; }
+      color: #ffbf00; }
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
     font-size: 36px; } }
@@ -276,7 +276,7 @@ header.masthead {
   opacity: 1; }
 
 .floating-label-form-group-with-focus label {
-  color: #0085A1; }
+  color: #ffbf00; }
 
 form .form-group:first-child .floating-label-form-group {
   border-top: 1px solid #dee2e6; }
@@ -301,12 +301,12 @@ footer {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 .btn-primary {
-  background-color: #0085A1;
-  border-color: #0085A1; }
+  background-color: #ffbf00;
+  border-color: #ffbf00; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     color: #fff;
-    background-color: #00657b !important;
-    border-color: #00657b !important; }
+    background-color: #d9a200 !important;
+    border-color: #d9a200 !important; }
 
 .btn-lg {
   font-size: 16px;

@@ -5,7 +5,8 @@
     &:focus,
     &:hover {
       text-decoration: none;
-      color: $primary;
+      // color: $primary;
+      color: #00ffbf;
     }
     > .post-title {
       font-size: 30px;

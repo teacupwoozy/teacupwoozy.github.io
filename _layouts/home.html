@@ -32,15 +32,171 @@ layout: default
         <!-- Home Intro -->
         <article class="mb-5">
           <p>Mission-driven and relentlessly curious, I am seeking opportunities in data journalism.</p>
+          <br>
+        </article>
 
+        <!-- Data Project List -->
+        <header class="">
+          <h2 class="section-heading">Data Projects</h2>
+          <br>
+        </header>
+        <article class="mb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <a href="https://stacyem.com/spd">
+                  <h5>Seattle Police Department:
+                    <br>Sexual Assault and Violent Crime Calls</h3>
+                </a>
+                <p>An exploration of violent crime calls and sexual assault calls in Seattle, Washington from 2010 to 2018.
+                  <br>Tools: Python, Pandas, Jupyter Notebook, matplotlib, NumPy, Tableau.</p>
+              </div>
+              <div class="col">
+                <!-- <br><br> -->
+                <a href="https://stacyem.com/spd"><img src="/img/project_spd.png" alt="screenshot of Jupyter Notebook"></a>
+                <!-- <br><br> -->
+              </div>
+            </div>
+          </div>
+
+          <br><br>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <a href="https://github.com/openelections">
+                  <h5>OpenElections Open Source Project</h3>
+                </a>
+                <p>Data entry and converting PDF data into CSVs.
+                  <br>Tools: Tabula, Excel, LibreOffice and my fingers.</p>
+              </div>
+              <div class="col">
+                <!-- <br><br> -->
+                <a href="https://github.com/openelections"><img src="/img/project_openelections.png"
+                    alt="screenshot of OpenElections GitHub page"></a>
+                <!-- <br><br> -->
+              </div>
+            </div>
+          </div>
+          <br>
+        </article>
+
+
+        <!-- Web Dev Project List -->
+        <header class="">
+          <h2 class="section-heading">Web Development Projects</h2>
+          <br>
+        </header>
+        <article class="mb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <a href="https://stacyem.com">
+                  <h5>Portfolio</h3>
+                </a>
+                <p>This static portfolio website. Take a look around.
+                  <br>Tools: Jekyll, HTML, JavaScript, SASS.</p>
+              </div>
+              <div class="col">
+                <!-- <br><br> -->
+                <a href="https://stacyem.com"><img src="/img/project_portfolio.png"
+                    alt="screenshot of this portfolio website"></a>
+                <!-- <br><br> -->
+              </div>
+            </div>
+          </div>
+        
+          <br><br>
+        
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <a href="https://votesfromabroad.com">
+                  <h5>Votes From Abroad</h3>
+                </a>
+                <p>Informational website guiding US citizens living overseas on the process to register and vote from abroad.
+                  <br>Tools: HTML, CSS.</p>
+              </div>
+              <div class="col">
+                <!-- <br><br> -->
+                <a href="https://votesfromabroad.com"><img src="/img/project_vote.png"
+                    alt="screenshot of Votes From Abroad website"></a>
+                <!-- <br><br> -->
+              </div>
+            </div>
+          </div>
+
+          <br><br>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <a href="https://www.teacupwoozy.com">
+                  <h5>Teacup Woozy Travel Planning</h3>
+                </a>
+                <p>A static website for a small travel planning business.
+                  <br>Tools: HTML, CSS, JavaScript.</p>
+              </div>
+              <div class="col">
+                <!-- <br><br> -->
+                <a href="https://www.teacupwoozy.com/"><img src="/img/project_tw.png"
+                  alt="screenshot of Teacup Woozy homepage"></a>
+                <!-- <br><br> -->
+              </div>
+            </div>
+          </div>
+          <br>
+        </article>
+
+
+        <!-- Writing Projects -->
+        <header class="">
+          <h2 class="section-heading">Writing Projects</h2>
+          <br>
+        </header>
+        <article class="mb-5">
+          <div>
+            <h5>Hale Makua Health Services</h3>
+            <p>Researched and wrote 150+ page Emergency Operations Manual and Communications Plan for a non-profit long-term care
+              facility for frail elderly. Written in compliance with new Federal regulations regarding emergency events.</p>
+          </div>
+          <br>
+          <div>
+            <h5>Teacup Woozy Travel Planning</h3>
+            <p>Weekly travel-related blog posts and twice-monthly newsletters.</p>
+          </div>
+          <br>
+          <div>
+            <h5>Untitled Novel</h3>
+            <p>A few years back I made a goal to write a novel. Over the course of the next few months – because I am very
+              motivated by
+              goals – I did just that. And now, I am the proud creator of an incredibly mediocre 65,000-word novel.</p>
+          </div>
+          <br>
+          <div>
+            <h5>The Orion</h3>
+            <p>Entertainment editor and columnist for California State University, Chico student newspaper. Awards during my
+              tenure:
+              Pacemaker Award for General Excellence and Society of Professional Journalists (Regional) first place award for Best
+              All-Around University Newspaper.</p>
+          </div>
+          <br>
+          <div>
+            <h5>The Synthesis Weekly</h3>
+            <p>While in college, I was a staff writer, fine arts columnist, feature writer, then managing editor of a very
+              rough-around-the-edges entertainment weekly. Fortunately, I had an incredible copyeditor.</p>
+          </div>
+          <br><br>
+        
         </article>
 
         <!-- Home Post List -->
         {% for post in site.posts limit : 5 %}
 
         <article class="post-preview">
+          <h2 class="section-heading">Articles/Data Reporting</h2>
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-            <h2 class="post-title">{{ post.title }}</h2>
+            <h5 class="post-title">{{ post.title }}</h2>
             {% if post.subtitle %}
             <h3 class="post-subtitle">{{ post.subtitle }}</h3>
             {% else %}
@@ -54,7 +210,8 @@ layout: default
             {{ site.author }}
             {% endif %}
             on
-            {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}</p>
+            {{ post.date | date: '%B %d, %Y' }} 
+            <!--  &middot; {% include read_time.html content=post.content %}</p> -->
         </article>
 
         <hr>
