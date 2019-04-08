@@ -24,11 +24,11 @@ h6 {
 }
 
 a {
-  color: $gray-900;
+  color: $gray-600;
   @include transition-all;
   &:focus,
   &:hover {
-    color: $primary;
+    color: #ffd24d;
   }
 }
 
@@ -41,6 +41,7 @@ blockquote {
   font-size: 36px;
   font-weight: 700;
   margin-top: 60px;
+  color: #00ffbf;
 }
 
 .caption {

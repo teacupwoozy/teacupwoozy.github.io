@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>
-    Contact Me - Stacy Montemayor
+    Contact - Stacy Montemayor
     
   </title>
 
@@ -67,9 +67,9 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="page-heading">
-          <h1>Contact Me</h1>
+          <h1>Contact</h1>
           
-            <span class="subheading font-weight-bold">Have questions? I have answers.</span>
+            <span class="subheading font-weight-bold">Hello, World!</span>
           
         </div>
       </div>
@@ -82,6 +82,11 @@
     <div class="col-lg-8 col-md-10 mx-auto">
 
       <p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>
+
+<p>Are you still reading? Why don't you drop me a <a href="mailto:stacy.montemayor@gmail.com" class="custom-links">line</a>.</p>
+
+
+
 <form name="sentMessage" id="contactForm" novalidate>
   <div class="control-group">
     <div class="form-group floating-label-form-group controls">
@@ -97,13 +102,13 @@
       <p class="help-block text-danger"></p>
     </div>
   </div>
-  <div class="control-group">
+  <!-- <div class="control-group">
     <div class="form-group col-xs-12 floating-label-form-group controls">
       <label>Phone Number</label>
       <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
       <p class="help-block text-danger"></p>
     </div>
-  </div>
+  </div> -->
   <div class="control-group">
     <div class="form-group floating-label-form-group controls">
       <label>Message</label>
@@ -199,7 +204,7 @@
           // get values from FORM
           var name = $("input#name").val();
           var email = $("input#email").val();
-          var phone = $("input#phone").val();
+          // var phone = $("input#phone").val();
           var message = $("textarea#message").val();
           var firstName = name; // For Success/Failure Message
           // Check for white space in name for Success/Fail message
@@ -213,7 +218,7 @@
             type: "POST",
             data: {
               name: name,
-              phone: phone,
+              // phone: phone,
               email: email,
               message: message
             },
