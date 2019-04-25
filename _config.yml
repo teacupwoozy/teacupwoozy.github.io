@@ -5,6 +5,8 @@ author:            Stacy Montemayor
 baseurl:           ""
 url:               "https://teacupwoozy.github.io"
 
+google_analytics: UA-134703235-1
+
 # Social Profiles
 twitter_username:  teacupwoozy
 github_username:   teacupwoozy
